@@ -1,0 +1,7 @@
+node_modules/
+.next/
+.env.local
+.env*.local
+.vercel/
+tmp-next-err.log
+tmp-next-out.log
