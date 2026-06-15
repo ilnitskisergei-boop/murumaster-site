@@ -97,7 +97,7 @@ export async function POST(request: Request) {
 
     const resend = new Resend(apiKey);
     const result = await resend.emails.send({
-      from: "Murumaster <onboarding@resend.dev>",
+      from: "Murumaster <noreply@murumaster.ee>",
       to: recipient,
       replyTo: payload.email,
       subject,
