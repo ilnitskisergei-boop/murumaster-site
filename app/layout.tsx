@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Murumaster - aiatehnika rent ja niitmisteenus",
   description:
     "Murumaster pakub aiatehnika renti ja niitmisteenust Tallinnas ja Harjumaal.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
