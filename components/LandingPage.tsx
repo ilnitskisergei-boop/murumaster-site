@@ -193,7 +193,9 @@ export function LandingPage({ locale }: LandingPageProps) {
               {t.hero.eyebrow}
             </p>
             <h1 className="text-5xl font-black leading-none sm:text-6xl lg:text-7xl">
-              {t.hero.title}
+              {locale === "et"
+                ? "Aiatehnika rent Tallinnas ja Harjumaal"
+                : t.hero.subtitle}
             </h1>
             <p className="mt-5 max-w-2xl text-2xl font-bold leading-tight text-white sm:text-3xl">
               {t.hero.subtitle}
