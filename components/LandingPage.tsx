@@ -131,11 +131,11 @@ export function LandingPage({ locale }: LandingPageProps) {
       className="min-h-screen overflow-hidden bg-[#f7faf5] text-[#17201b]"
     >
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/15 bg-[#12351f]/95 text-white backdrop-blur">
-        <div className="mx-auto flex min-h-20 max-w-7xl items-center justify-between gap-4 px-4 py-2 sm:px-6 lg:min-h-[5.5rem] lg:px-8">
-          <Link href={`/${locale}`} className="flex items-center gap-3">
+        <div className="mx-auto flex min-h-16 max-w-7xl items-center justify-between gap-2 px-3 py-2 sm:min-h-20 sm:gap-4 sm:px-6 lg:min-h-[5.5rem] lg:px-8">
+          <Link href={`/${locale}`} className="flex min-w-0 items-center gap-2 sm:gap-3">
             <Logo />
-            <span className="leading-none">
-              <span className="block text-xl font-black tracking-[0.08em] text-white sm:text-2xl">
+            <span className="min-w-0 leading-none">
+              <span className="block max-w-[7.5rem] truncate text-base font-black tracking-[0.04em] text-white sm:max-w-none sm:text-2xl sm:tracking-[0.08em]">
                 MURUMASTER
               </span>
               <span className="mt-1 hidden text-xs font-black uppercase tracking-[0.16em] text-[#f4c542] sm:block">
@@ -176,7 +176,7 @@ export function LandingPage({ locale }: LandingPageProps) {
             <button
               type="button"
               onClick={() => scrollToLead()}
-              className="rounded-full bg-[#f4c542] px-4 py-2 text-sm font-black text-[#17201b] shadow-lg shadow-black/20 transition hover:-translate-y-0.5 hover:bg-[#ffd95f]"
+              className="whitespace-nowrap rounded-full bg-[#f4c542] px-3 py-2 text-xs font-black text-[#17201b] shadow-lg shadow-black/20 transition hover:-translate-y-0.5 hover:bg-[#ffd95f] sm:px-4 sm:text-sm"
             >
               {t.cta}
             </button>
@@ -660,7 +660,7 @@ function Logo() {
 
         setHasLogo(false);
       }}
-      className="h-[68px] w-auto object-contain sm:h-20 lg:h-[84px]"
+      className="h-12 w-auto object-contain sm:h-20 lg:h-[84px]"
     />
   );
 
