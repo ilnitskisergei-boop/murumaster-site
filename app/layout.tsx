@@ -4,6 +4,7 @@ import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import "./globals.css";
 
 const siteUrl = "https://murumaster.ee";
+const ogImageUrl = `${siteUrl}/og-image.jpg`;
 const title = "Murumaster – Aiatehnika rent Tallinnas ja Harjumaal";
 const description =
   "Murutraktorite, võsalõikurite ja muu aiatehnika rent. Transport ja töö tegijaga teenus Tallinnas ja Harjumaal.";
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Murumaster",
     images: [
       {
-        url: "/og-image.jpg",
+        url: ogImageUrl,
         width: 1200,
         height: 630,
         alt: "Murumaster aiatehnika rent Tallinnas ja Harjumaal",
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["/og-image.jpg"],
+    images: [ogImageUrl],
   },
 };
 
