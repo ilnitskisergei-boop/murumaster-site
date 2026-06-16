@@ -80,7 +80,7 @@ export const content = {
         ],
       },
       {
-        title: "Trimmer",
+        title: "Murutrimmer",
         model: "STIHL FS 180",
         description: "Servade, kraavide ja raskesti ligipääsetavate kohtade jaoks.",
         price: "alates 20€/päev",
