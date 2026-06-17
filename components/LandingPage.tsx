@@ -244,6 +244,38 @@ export function LandingPage({ locale }: LandingPageProps) {
         </div>
       </section>
 
+      {locale === "et" && (
+        <section className="bg-[#f7faf5] px-4 pt-10 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl rounded-[1.35rem] border border-[#dbe5d8] bg-white p-6 shadow-lg shadow-[#12351f]/6 sm:p-8">
+            <div className="max-w-4xl">
+              <p className="mb-3 inline-flex rounded-full bg-[#eef6e9] px-4 py-2 text-xs font-black uppercase tracking-[0.12em] text-[#315c36]">
+                Aiatehnika rent
+              </p>
+              <h2 className="text-2xl font-black tracking-tight text-[#17201b] sm:text-3xl">
+                Murutraktori rent Tallinnas ja Harjumaal
+              </h2>
+              <div className="mt-4 grid gap-4 text-base leading-7 text-[#526054] sm:text-lg">
+                <p>
+                  Pakume aiatehnika renti nii eraisikutele kui ettevõtetele.
+                  Meilt saab rentida murutraktorit, muruniidukit,
+                  murutrimmerit, oksapurustajat ja haagist. Pakume
+                  murutraktori renti, muruniiduki renti, murutrimmeri renti ja
+                  oksapurustaja renti Tallinnas ning Harjumaal.
+                </p>
+                <p>
+                  Tehnikat on võimalik rentida nii nädalavahetuseks kui
+                  pikemaks perioodiks. Vajadusel pakume transporti objektile,
+                  tööd koos operaatoriga ja nõustamist sobiva tehnika valikul.
+                </p>
+                <p className="font-bold text-[#314338]">
+                  Teenindame Tallinna ja kogu Harjumaad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       <section id="tehnika" className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-black tracking-tight sm:text-4xl">
